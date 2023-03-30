@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Iconscout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Google Font (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- image slider start  -->
+
+    <h1></h1>
+    <h2></h2>
+    <section class="slider-section">
+        <button class="slider-angle-button" id="before-button">
+            <i class="uil uil-angle-left-b angle-button"></i>
+        </button>
+        <div class="slider">
+
+            <div class="slides">
+                <!-- radio button start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- radio buttons end -->
+                <!-- slide images start-->
+                <div class="slide first">
+                    <img src="./img/pexels-cassiano-psomas-12518873.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./img/pexels-césar-coni-3671510.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./img/pexels-nicholas-shirazawa-13139149.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./img/pexels-tom-fisk-4557917.jpg">
+                </div>
+                <!-- slie image end -->
+
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <!-- automatic navigation end -->
+                </div>
+            </div>
+
+            <!-- manual navigation start -->
+            <div class="navigation-buttons">
+                <label for="radio1" class="manual-btn" id="manual-btn1"></label>
+                <label for="radio2" class="manual-btn" id="manual-btn2"></label>
+                <label for="radio3" class="manual-btn" id="manual-btn3"></label>
+                <label for="radio4" class="manual-btn" id="manual-btn4"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+        <button class="slider-angle-button before-button" id="after-button">
+            <i class="uil uil-angle-right-b angle-button"></i>
+        </button>
+        </div>
+    </section>
+    <!-- image slider end -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
